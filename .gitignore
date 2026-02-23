@@ -1,0 +1,3 @@
+csi_env/
+*.dylib
+__pycache__/
