@@ -1,3 +1,4 @@
 csi_env/
 *.dylib
 __pycache__/
+*.npy
