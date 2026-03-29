@@ -11,6 +11,10 @@ mp_draw = mp.solutions.drawing_utils
 
 cap = cv2.VideoCapture(0)
 
+if not cap.isOpened():
+    print("KAMERA AÇILAMADI ❌")
+    exit()
+
 while True:
     ret, frame = cap.read()
     if not ret:
@@ -36,6 +40,8 @@ while True:
                 np.save("sequence.npy", input_data)
 
                 sequence = []
+    else:
+      sequence = []  #El yoksa sıfırla
 
     cv2.imshow("Hand Tracking", frame)
 

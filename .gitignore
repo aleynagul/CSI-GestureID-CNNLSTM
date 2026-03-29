@@ -2,4 +2,5 @@ csi_env/
 *.dylib
 __pycache__/
 *.npy
-sequence.npy
+sequence.npy*.h5
+*.h5
